@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth bg-black">
+<head>
+    <style>
+    /* Default state: Hide everything */
+    body {
+        display: none;
+    }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula Manipal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#E31837',
+                        dark: '#0a0a0a',
+                        surface: '#171717',
+                    },
+                    fontFamily: {
+                        mono: ['"JetBrains Mono"', 'monospace'],
+                        sans: ['"Inter"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark text-white font-sans antialiased">
+
+    <nav class="fixed w-full z-50 border-b border-white/10 bg-dark/95 backdrop-blur">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="logo.png" alt="FM Logo" class="h-10 w-auto">
+            </div>
+            <div class="flex gap-8">
+                <a href="#about" class="text-sm font-mono text-gray-400 hover:text-brand transition-colors">ABOUT</a>
+                <a href="#cars" class="text-sm font-mono text-gray-400 hover:text-brand transition-colors">CARS</a>
+                <a href="#subsystems" class="text-sm font-mono text-gray-400 hover:text-brand transition-colors">SUBSYSTEMS</a>
+                <a href="#sponsors" class="text-sm font-mono text-gray-400 hover:text-brand transition-colors">PARTNERS</a>
+            </div>
+            <a href="#" class="hidden md:block bg-white text-black px-5 py-2 font-mono text-sm font-bold hover:bg-brand hover:text-white transition-colors">
+                Sponsor Us
+            </a>
+        </div>
+    </nav>
+
+    <header class="relative h-screen flex items-center justify-center border-b border-white/10">
+        <div class="absolute inset-0 z-0">
+            <img src="team25.jpg" class="w-full h-full object-cover opacity-30">
+            <div class="absolute inset-0 bg-gradient-to-t from-dark to-transparent"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+            <div class="border-l-2 border-brand pl-6 md:pl-8">
+                <h1 class="font-mono text-5xl md:text-7xl font-bold uppercase leading-tight mb-4">
+                    Engineered<br>
+                    With<br>
+                    Passion.
+                </h1>
+                <p class="text-gray-400 text-lg md:text-xl max-w-xl mb-8 leading-relaxed">
+                    Designing and manufacturing electric  race cars at Manipal Institute of Technology since 2007.
+                </p>
+                <div class="flex flex-col md:flex-row gap-4">
+                    <a href="#cars" class="bg-brand text-white px-8 py-3 font-mono font-bold text-center hover:bg-red-700 transition-colors">
+                        View FM-25
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="py-24 border-b border-white/10 relative">
+    <div class="absolute top-0 right-0 p-4 opacity-20 hidden md:block">
+        <div class="w-32 h-32 border border-white rounded-full border-dashed animate-[spin_10s_linear_infinite]"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+        <div class="border-l-2 border-brand pl-8 py-2">
+            <h2 class="font-mono text-brand text-sm font-bold mb-4 tracking-widest">// ORIGIN_STORY</h2>
+            <h3 class="text-4xl md:text-5xl font-bold uppercase leading-tight mb-8">
+                More Than Just <br>
+                <span class="text-gray-500">A Racing Team.</span>
+            </h3>
+            <p class="text-gray-400 text-lg leading-relaxed mb-6 font-mono">
+                > We are a student project at Manipal Academy of Higher Education, bridging the gap between engineering theory and racetrack reality.
+            </p>
+            <p class="text-gray-400 text-lg leading-relaxed font-mono">
+                > Since 2007, our mission has been singular: design, manufacture, and race a Formula-style vehicle that pushes the boundaries of student innovation.
+            </p>
+        </div>
+
+        <div class="bg-surface border border-white/10 p-8 md:p-12 font-mono text-sm relative">
+            <div class="absolute -top-3 -left-3 bg-brand text-white px-2 py-1 text-xs font-bold">Overview</div>
+            
+            <div class="flex justify-between border-b border-white/10 py-3">
+                <span class="text-gray-500">HQ_LOCATION</span>
+                <span>Manipal, KA, IN</span>
+            </div>   
+            <div class="flex justify-between border-b border-white/10 py-3">
+                <span class="text-gray-500">TOTAL_PROJECTS</span>
+                <span>17 Race Cars</span>
+            </div>
+            <div class="flex justify-between py-3">
+                <span class="text-gray-500">OPERATIONAL_HOURS</span>
+                <span class="text-brand">24/7/365</span>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section id="subsystems" class="py-24 bg-dark border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 mb-12">
+            <h2 class="font-mono text-3xl font-bold uppercase text-white">
+                Subsystems
+            </h2>
+            <p class="text-gray-500 font-mono text-sm mt-2">Breakdown of our departments.</p>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-px bg-white/10 border border-white/10">
+                
+                <div class="group bg-dark p-8 hover:bg-surface transition-all duration-300 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity text-5xl text-white">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3 class="font-mono text-brand text-xs mb-2">SYS 01</h3>
+                    <h4 class="text-lg font-bold text-white mb-3 uppercase">Structures</h4>
+                    <p class="text-gray-400 text-xs leading-relaxed font-mono">
+                        The backbone of the car, ensuring rigidity and safety under extreme loads.
+                    </p>
+                </div>
+
+                <div class="group bg-dark p-8 hover:bg-surface transition-all duration-300 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity text-5xl text-white">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <h3 class="font-mono text-brand text-xs mb-2">SYS 02</h3>
+                    <h4 class="text-lg font-bold text-white mb-3 uppercase">Aerodynamics</h4>
+                    <p class="text-gray-400 text-xs leading-relaxed font-mono">
+                        Manipulating airflow to generate downforce and minimize drag.
+                    </p>
+                </div>
+
+                <div class="group bg-dark p-8 hover:bg-surface transition-all duration-300 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity text-5xl text-white">
+                        <i class="fas fa-car-side"></i>
+                    </div>
+                    <h3 class="font-mono text-brand text-xs mb-2">SYS 03</h3>
+                    <h4 class="text-lg font-bold text-white mb-3 uppercase">Vehicle Dynamics</h4>
+                    <p class="text-gray-400 text-xs leading-relaxed font-mono">
+                        Optimizing suspension geometry and tire utilization for peak handling.
+                    </p>
+                </div>
+
+                <div class="group bg-dark p-8 hover:bg-surface transition-all duration-300 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity text-5xl text-white">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="font-mono text-brand text-xs mb-2">SYS 04</h3>
+                    <h4 class="text-lg font-bold text-white mb-3 uppercase">Transmission</h4>
+                    <p class="text-gray-400 text-xs leading-relaxed font-mono">
+                        Efficiently transferring power from the engine to the wheels.
+                    </p>
+                </div>
+
+                <div class="group bg-dark p-8 hover:bg-surface transition-all duration-300 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity text-5xl text-white">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="font-mono text-brand text-xs mb-2">SYS 05</h3>
+                    <h4 class="text-lg font-bold text-white mb-3 uppercase">E-Powertrain</h4>
+                    <p class="text-gray-400 text-xs leading-relaxed font-mono">
+                        Designing, optimizing, and managing the complete powertrain architecture.
+                    </p>
+                </div>
+
+                <div class="group bg-dark p-8 hover:bg-surface transition-all duration-300 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity text-5xl text-white">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3 class="font-mono text-brand text-xs mb-2">SYS 06</h3>
+                    <h4 class="text-lg font-bold text-white mb-3 uppercase">Electronics</h4>
+                    <p class="text-gray-400 text-xs leading-relaxed font-mono">
+                        Managing sensor acquisition, safety interlocks, HV/LV monitoring, and CAN.
+                    </p>
+                </div>
+
+                <div class="group bg-dark p-8 hover:bg-surface transition-all duration-300 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity text-5xl text-white">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="font-mono text-brand text-xs mb-2">SYS 07</h3>
+                    <h4 class="text-lg font-bold text-white mb-3 uppercase">Driverless</h4>
+                    <p class="text-gray-400 text-xs leading-relaxed font-mono">
+                        Pioneering autonomous racing with advanced perception and path planning.
+                    </p>
+                </div>
+
+                <div class="group bg-dark p-8 hover:bg-surface transition-all duration-300 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity text-5xl text-white">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 class="font-mono text-brand text-xs mb-2">SYS 08</h3>
+                    <h4 class="text-lg font-bold text-white mb-3 uppercase">Management</h4>
+                    <p class="text-gray-400 text-xs leading-relaxed font-mono">
+                        Ensuring logistics, finances, and marketing drive the team forward.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="cars" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="flex flex-col md:flex-row gap-12 items-start">
+            <div class="md:w-1/2 sticky top-24">
+                <span class="font-mono text-brand text-sm mb-2 block">CURRENT CHALLENGER</span>
+                <h2 class="text-4xl md:text-5xl font-bold uppercase mb-8">FMXXV Electric</h2>
+                
+                <div class="border-t border-white/20">
+                    <div class="grid grid-cols-2 py-4 border-b border-white/20">
+                        <span class="text-gray-500 font-mono text-sm">Motor</span>
+                        <span class="font-bold">Liquid Cooled EMRAX 208 HV</span>
+                    </div>
+                    <div class="grid grid-cols-2 py-4 border-b border-white/20">
+                        <span class="text-gray-500 font-mono text-sm">Power</span>
+                        <span class="font-bold">80KW</span>
+                    </div>
+                    <div class="grid grid-cols-2 py-4 border-b border-white/20">
+                        <span class="text-gray-500 font-mono text-sm">Accumulator</span>
+                        <span class="font-bold">6.6 kWh net energy</span>
+                    </div>
+                    <div class="grid grid-cols-2 py-4 border-b border-white/20">
+                        <span class="text-gray-500 font-mono text-sm">Torque</span>
+                        <span class="font-bold">140Nm</span>
+                    </div>
+                    <div class="grid grid-cols-2 py-4 border-b border-white/20">
+                        <span class="text-gray-500 font-mono text-sm">Chassis</span>
+                        <span class="font-bold">AISI 4130 Steel</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="md:w-1/2 space-y-4">
+                <div class="aspect-video bg-surface border border-white/10 overflow-hidden">
+                    <img src="fm25.jpg" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="sponsors" class="py-24 bg-surface border-y border-white/10">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h3 class="font-mono text-gray-500 mb-12">SUPPORTED BY INDUSTRY LEADERS</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-12 opacity-50 grayscale">
+                <div class="flex items-center justify-center h-12 text-2xl font-bold">MAHE</div>
+                <div class="flex items-center justify-center h-12 text-2xl font-bold">BATEMO</div>
+                <div class="flex items-center justify-center h-12 text-2xl font-bold">ANALOG DEVICES</div>
+                <div class="flex items-center justify-center h-12 text-2xl font-bold">FLUKE</div>
+                <div class="flex items-center justify-center h-12 text-2xl font-bold">Bender</div>
+                <div class="flex items-center justify-center h-12 text-2xl font-bold">Teal</div>
+                <div class="flex items-center justify-center h-12 text-2xl font-bold">EPLAN</div>
+                <div class="flex items-center justify-center h-12 text-2xl font-bold">SIKA</div>
+                <div class="flex items-center justify-center h-12 text-2xl font-bold">ADOR</div>
+                <div class="flex items-center justify-center h-12 text-2xl font-bold">EBLU</div>
+                <div class="flex items-center justify-center h-12 text-2xl font-bold">STYRENIX</div>
+                <div class="flex items-center justify-center h-12 text-2xl font-bold">RHIENMETALL</div>
+                <div class="flex items-center justify-center h-12 text-2xl font-bold">AMADA</div>
+                <div class="flex items-center justify-center h-12 text-2xl font-bold">FRACKTAL WORKS</div>
+                <div class="flex items-center justify-center h-12 text-2xl font-bold">LA DAVITA</div>
+                <div class="flex items-center justify-center h-12 text-2xl font-bold">UNITED RUBBER INDUSTRIES</div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="py-12 border-t border-white/10 bg-dark text-sm text-gray-400">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8">
+            
+            <div class="col-span-1 md:col-span-2">
+                <div class="flex items-center gap-3 mb-4">
+                    <img src="logo.png" alt="FM Logo" class="h-8 w-auto grayscale opacity-80">
+                    <span class="font-mono font-bold text-white tracking-tight">FORMULA MANIPAL</span>
+                </div>
+                <p class="max-w-xs font-mono text-xs leading-relaxed">
+                    > Formula Student Team from Manipal Institute of Technology. Engineering the future of Indian motorsports since 2007.
+                </p>
+            </div>
+
+
+            <div>
+                <h4 class="font-mono text-white mb-4 border-b border-brand inline-block pb-1">CONTACT INFO</h4>
+                <ul class="space-y-4 font-mono text-xs">
+                    <li>
+                        <span class="block text-gray-600 text-[10px] uppercase tracking-wider">Team Manager</span>
+                        <span class="text-white">Amogha Rao</span>
+                    </li>
+                    <li>
+                        <span class="block text-gray-600 text-[10px] uppercase tracking-wider">Phone</span>
+                        <span class="text-white hover:text-brand transition-colors"><a href="tel:+919986507801">+91 99865 07801</a></span>
+                    </li>
+                    <li>
+                        <span class="block text-gray-600 text-[10px] uppercase tracking-wider">Email</span>
+                        <span class="text-white hover:text-brand transition-colors"><a href="mailto:formulamanipal@manipal.edu">formulamanipal@manipal.edu</a></span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-[10px] font-mono uppercase tracking-widest text-gray-600">
+            <p>&copy; 2025 Formula Manipal. All Rights Reserved.</p>
+        </div>
+    </footer>
+<script>
+    (function() {
+        // Set your password here
+        var accessCode = "FM2025"; 
+        
+        // The browser alert window
+        var input = prompt("Authentication Required.\nEnter System Access Code:");
+        
+        // Check password
+        if (input === accessCode) {
+            // If correct, show the site
+            document.body.style.display = "block";
+            // Optional: Save to session so they don't have to re-enter on refresh
+            sessionStorage.setItem('authenticated', 'true');
+        } else {
+            // If wrong, reload the page (infinite loop until correct)
+            alert("ACCESS DENIED: Invalid Credentials.");
+            location.reload();
+        }
+    })();
+</script>
+</body>
+</html>
